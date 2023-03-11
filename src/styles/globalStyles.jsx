@@ -9,9 +9,6 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Sofia Sans Semi Condensed', sans-serif;
     }
 
-    /* background: ${theme.colors.light};
-    color: ${theme.colors.white}; */
-
     input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 30px ${theme.colors.light} inset;
     }
@@ -95,6 +92,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 40px 80px;
         text-align: center;
 
+        @media(max-width: 500px) {
+            padding: 40px 20px;
+        }
+
         > h1 {
             font-size: 50px;
             color: ${theme.colors.light};
@@ -119,6 +120,10 @@ const GlobalStyle = createGlobalStyle`
             flex-direction: column;
             align-items: center;
             gap: 12px;
+
+            @media(max-width: 500px) {
+                padding: 0 20px;
+            }
         }
 
         .password-hidden {
@@ -135,6 +140,10 @@ const GlobalStyle = createGlobalStyle`
         gap: 40px;
         font-weight: 800;
         color: ${theme.colors.white};
+
+        @media(max-width: 500px) {
+            padding: 0 20px;
+        }
 
         .contacts {
             display: flex;
